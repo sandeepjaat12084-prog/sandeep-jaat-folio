@@ -1,5 +1,6 @@
-import { Linkedin, Mail } from "lucide-react";
+import { Mail } from "lucide-react";
 
+import { LinkedInIcon } from "@/components/portfolio/brand-icons";
 import { Section, SectionHeading } from "@/components/portfolio/section";
 import { socialLinks } from "@/data/social-links";
 
@@ -36,7 +37,7 @@ export function Contact() {
                 className="group inline-flex items-center gap-3 rounded-sm text-base text-foreground transition-colors hover:text-primary focus-visible:ring-2 focus-visible:ring-ring focus-visible:outline-none sm:text-lg"
               >
                 <span className="flex h-10 w-10 items-center justify-center rounded-lg bg-secondary text-primary transition-colors group-hover:bg-primary/10">
-                  <Linkedin className="h-5 w-5" aria-hidden="true" />
+                  <LinkedInIcon className="h-5 w-5" />
                 </span>
                 <span className="underline-offset-4 group-hover:underline">linkedin.com/in/sandeep-jaat</span>
               </a>

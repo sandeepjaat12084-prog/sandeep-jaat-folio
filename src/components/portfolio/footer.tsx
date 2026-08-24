@@ -1,5 +1,6 @@
-import { Linkedin, Mail, Terminal } from "lucide-react";
+import { Mail, Terminal } from "lucide-react";
 
+import { LinkedInIcon } from "@/components/portfolio/brand-icons";
 import { socialLinks } from "@/data/social-links";
 
 export function Footer() {
@@ -38,7 +39,7 @@ export function Footer() {
               aria-label="Sandeep on LinkedIn"
               className="rounded-sm text-muted-foreground transition-colors hover:text-primary focus-visible:ring-2 focus-visible:ring-ring focus-visible:outline-none"
             >
-              <Linkedin className="h-4.5 w-4.5" aria-hidden="true" />
+              <LinkedInIcon className="h-4.5 w-4.5" />
             </a>
           </li>
         </ul>

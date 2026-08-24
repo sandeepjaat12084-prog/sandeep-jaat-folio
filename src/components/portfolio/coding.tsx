@@ -1,10 +1,15 @@
 import { motion } from "framer-motion";
-import { ArrowUpRight, Code2, Medal, Target, Trophy } from "lucide-react";
+import { ArrowUpRight, Code2, Medal, Target, Trophy, type LucideIcon } from "lucide-react";
 
 import { Section, SectionHeading } from "@/components/portfolio/section";
 import { codingFocus, codingProfiles } from "@/data/coding";
 
-const platformIcons = [Code2, Trophy, Medal, Target];
+const platformIcons: Record<string, LucideIcon> = {
+  LeetCode: Code2,
+  Codeforces: Trophy,
+  CodeChef: Medal,
+  HackerRank: Target,
+};
 
 export function Coding() {
   return (
@@ -29,7 +34,7 @@ export function Coding() {
 
       <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
         {codingProfiles.map((profile, i) => {
-          const Icon = platformIcons[i % platformIcons.length];
+          const Icon = platformIcons[profile.platform] ?? Code2;
           const card = (
             <motion.article
               initial={{ opacity: 0, y: 24 }}

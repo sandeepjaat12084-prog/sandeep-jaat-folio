@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
-import { ArrowUpRight, FolderGit2, Github } from "lucide-react";
+import { ArrowUpRight, FolderGit2 } from "lucide-react";
 
+import { GitHubIcon } from "@/components/portfolio/brand-icons";
 import { Section, SectionHeading } from "@/components/portfolio/section";
 import { projects, type Project } from "@/data/projects";
 
@@ -57,7 +58,7 @@ function ProjectCard({ project, index }: { project: Project; index: number }) {
               rel="noopener noreferrer"
               className="inline-flex items-center gap-1.5 rounded-sm text-muted-foreground transition-colors hover:text-primary focus-visible:ring-2 focus-visible:ring-ring focus-visible:outline-none"
             >
-              <Github className="h-4 w-4" aria-hidden="true" />
+              <GitHubIcon className="h-4 w-4" />
               GitHub
             </a>
           ) : null}

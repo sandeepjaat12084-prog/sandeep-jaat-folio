@@ -1,7 +1,8 @@
 import { AnimatePresence, motion } from "framer-motion";
-import { ArrowDown, Linkedin, Mail, MapPin } from "lucide-react";
+import { ArrowDown, Mail, MapPin } from "lucide-react";
 import { useEffect, useState } from "react";
 
+import { LinkedInIcon } from "@/components/portfolio/brand-icons";
 import { personalInfo } from "@/data/portfolio";
 import { socialLinks } from "@/data/social-links";
 
@@ -115,7 +116,7 @@ export function Hero() {
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 rounded-sm text-muted-foreground transition-colors hover:text-primary focus-visible:ring-2 focus-visible:ring-ring focus-visible:outline-none"
               >
-                <Linkedin className="h-4 w-4" aria-hidden="true" />
+                <LinkedInIcon className="h-4 w-4" />
                 LinkedIn
               </a>
               <span className="inline-flex items-center gap-2 text-muted-foreground">
