@@ -81,7 +81,7 @@ export function Navbar() {
             animate={{ height: "auto", opacity: 1 }}
             exit={{ height: 0, opacity: 0 }}
             transition={{ duration: 0.25, ease: "easeOut" }}
-            className="glass overflow-hidden lg:hidden"
+            className="overflow-hidden border-b border-border bg-background/95 backdrop-blur-xl lg:hidden"
           >
             <ul className="space-y-1 px-4 py-4">
               {navItems.map((item) => (
